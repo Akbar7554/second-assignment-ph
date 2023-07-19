@@ -255,8 +255,6 @@ nav {
 
 /* videoplay section  */
 .videoplay-card-main {
-    display: grid;
-    grid-template-columns: repeat(4, 270px);
     width: 75%;
     margin: auto;
     padding-top: 50px;
@@ -653,7 +651,9 @@ nav {
     margin-left: 600px;
     padding-bottom: 50px;
 }
-
+.social-icons > a {
+    color: #FFF;
+}
 .developers {
     display: flex;
     gap: 40px;
@@ -741,6 +741,10 @@ nav {
 
     .videoplay-card-main {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .main-container,
+    .title-container {
+        flex-direction: column;
     }
 }
 
