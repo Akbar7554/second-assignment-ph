@@ -34,12 +34,12 @@ nav {
     gap: 20px;
 }
 
-.logo-container > img {
+.logo-container>img {
     width: 75px;
     height: 35px;
 }
 
-.logo-container > h2 {
+.logo-container>h2 {
     text-align: center;
     font-family: Work Sans;
     font-size: 40px;
@@ -52,14 +52,14 @@ nav {
     gap: 20px;
 }
 
-.nav-container > ul {
+.nav-container>ul {
     display: flex;
     align-items: center;
     gap: 20px;
     list-style: none;
 }
 
-.nav-container > ul > li {
+.nav-container>ul>li {
     color: var(--primary-color);
     text-align: center;
     font-family: Work Sans;
@@ -78,7 +78,7 @@ nav {
     background: rgba(11, 2, 35, 0.10);
 }
 
-.follow-us > ul {
+.follow-us>ul {
     display: flex;
     list-style: none;
     gap: 20px;
@@ -88,11 +88,246 @@ nav {
 #youtube {
     color: #F61C0D;
 }
+
 #tiktok {
     color: #000000;
 }
 
+/* Main section start here */
+/* Goat section */
+.goat-main-container {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
+.goat-main-container,
+.left-image {
+    height: 100%;
+    width: 700px;
+    position: relative;
+}
+
+.goat-main-container,
+.right-image {
+    height: 600px;
+    width: 550px;
+}
+
+.goat-container {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 400px;
+    padding-left: 300px;
+}
+
+.goat-title {
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat-name {
+    font-family: Work Sans;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.primary-p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.primary-p>i {
+    color: #FF42A5;
+}
+
+.button {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    padding: 16px 30px;
+    background-color: #FF42A5;
+    border: none;
+    border-radius: 48px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    border-radius: 48px;
+    background-color: #4EC5F7;
+    padding: 16px 30px;
+    border: none;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* gamer section */
+.gamer-main-container {
+    background-color: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+    padding-right: 250px;
+    padding-left: 100px;
+}
+
+.gamer-left-image {
+    width: 750px;
+    height: 470px;
+}
+
+.gamer-info {}
+
+.gamer-title {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gamer-first-description {
+    padding-bottom: 20px;
+    color: #534C64;
+    width: 400px;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.gamer-last-description {
+    padding-top: 20px;
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* video play  */
+.video-title {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.video-description {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* videoplay section  */
+.videoplay-card-main {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.videoplay-main>img:hover {
+    border-radius: 16px;
+    border: 5px solid #FF42A5;
+
+}
+
+.videoplay-main>img {
+    width: 250px;
+    height: 300px;
+}
+
+/* play instantly section */
+.text-title {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.text-color-title {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-color-description {
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.title-top-image {
+    width: 380px;
+    height: 420px;
+}
+
+.title-bottom-image {
+    position: absolute;
+    left: 810px;
+    width: 200px;
+    height: 230px;
+    padding-top: 280px;
+}
+
+.text-title {
+    text-align: right;
+    padding-left: 300px;
+}
+
+.text-title-description {
+    width: 320px;
+    text-align: right;
+    padding-left: 300px;
+
+}
 
 /* navbar design for small device */
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -103,20 +338,71 @@ nav {
         padding-left: 180px;
         padding-top: 50px;
     }
+
     .nav-container {
         flex-direction: column;
     }
-    .nav-container > ul {
+
+    .nav-container>ul {
         flex-direction: column;
         padding-bottom: 30px;
     }
+
     .follow-us {
         flex-direction: row;
     }
+
     .logo-container {
         padding-bottom: 30px;
     }
+
+    .goat-main-container {
+        flex-direction: column-reverse;
+    }
+
+    .goat-container {
+        width: 296px;
+        margin: 0 auto;
+    }
+
+
+    .goat-main-container,
+    .right-image {
+        margin-top: 400px;
+        width: 95%;
+    }
+
+    .gamer-main-container {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .gamer-left-image {
+        padding-left: 0px;
+        height: 300px;
+        width: 350px;
+    }
+
+    .gamer-title {
+        text-align: center;
+    }
+
+    .gamer-info {
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .gamer-first-description {
+        text-align: center;
+    }
+
+    .gamer-last-description {
+        text-align: center;
+    }
+
 }
+
 /* navbar design for tablet device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     nav {
