@@ -762,6 +762,45 @@ nav {
         width: 150px;
         padding-top: 450px;
     }
+    .feature-container-top {
+    }
+    .main-footer {
+        height: auto;
+    }
+    .footer-title,
+    .social-icons,
+    .developers,
+    .developers-last {
+        margin-left: 0px;
+    }
+    .footer-logo-container {
+        padding-left: 70px;
+        margin-left: 0px;
+    }
+    .footer-title,
+    .social-icons {
+        text-align: center;
+        padding-left: 10px;
+        display: grid;
+        column-gap: 0px;
+        grid-template-columns: repeat(3, 95px);
+    }
+    .developers {
+        font-size: 12px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        column-gap: 0px;
+        grid-template-columns: repeat(2, 170px);
+    }
+    .developers-last {
+        padding-top: 20px;
+        padding-left: 100px;
+        font-size: 12px;
+        width: 140px;
+        text-align: center;
+    }
 }
 
 /* navbar design for tablet device */
