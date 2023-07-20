@@ -407,6 +407,7 @@ nav {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .feature-main {
     text-align: center;
     flex-basis: 230px;
@@ -424,6 +425,7 @@ nav {
     font-weight: 600;
     border: 1px solid transparent;
 }
+
 .feature-main:hover {
     border: 1px solid #FF42A5;
     color: #FF42A5;
@@ -489,7 +491,7 @@ nav {
 }
 
 /* navbar design for small device */
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
     nav {
         flex-direction: column;
         gap: 30px;
@@ -588,26 +590,6 @@ nav {
         padding-top: 450px;
     }
 
-    /* game feature */
-    
-    .feature-container {
-        font-size: 10px;
-        display: grid;
-        grid-template-columns: repeat(2,180px);
-        width: 150px;
-        padding-right: 0px;
-        padding-left: 120px;
-    }
-    .feature-main {
-        width: 100px;
-        height: 20px;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .feature-main-image {
-        width: 20px;
-        height: 20px;
-    }
 
     /* footer section */
     .main-footer {
@@ -652,7 +634,7 @@ nav {
         width: 140px;
         text-align: center;
     }
-    
+
 }
 
 /* navbar design for tablet device */
@@ -681,3 +663,139 @@ nav {
 
 
 
+/* practice */
+.single-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 230px;
+    padding: 2px 8px;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFF;
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.single-column:hover {
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    cursor: pointer;
+}
+
+.single-column>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+
+.full-column {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+
+
+/* for medium device */
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .full-column {
+        padding-left: 2px;
+        display: grid;
+        gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .single-column {
+        width: 100px;
+        height: 25px;
+        gap: 1px;
+        padding: 2px 2px;
+        border-radius: 50px;
+        font-size: 7px;
+        border: 1px solid transparent;
+    }
+
+    .single-column>img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+    #single-column1 {
+        width: 80px;
+        height: 25px;
+    }
+    #single-column2 {
+        width: 90px;
+        height: 25px;
+    }
+    #single-column3 {
+        width: 95px;
+        height: 25px;
+    }
+
+
+    .section {
+        width: 100%;
+    }
+}
+
+/* for tablet device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .full-column {
+        padding-left: 2px;
+        display: grid;
+        gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .single-column {
+        width: 100px;
+        height: 25px;
+        gap: 1px;
+        padding: 2px 2px;
+        border-radius: 50px;
+        font-size: 7px;
+        border: 1px solid transparent;
+    }
+
+    .single-column>img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+    #single-column1 {
+        width: 80px;
+        height: 25px;
+    }
+    #single-column2 {
+        width: 90px;
+        height: 25px;
+    }
+    #single-column3 {
+        width: 95px;
+        height: 25px;
+    }
+
+
+    .section {
+        width: 100%;
+    }
+}
