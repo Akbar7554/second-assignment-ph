@@ -396,54 +396,59 @@ nav {
 
 }
 
-/* feature section*/
-.feature-container {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+/* game feature section start here ....*/
+.single-column {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.feature-main {
-    text-align: center;
-    flex-basis: 230px;
-    display: flex;
-    gap: 16px;
     align-items: center;
-    padding: 20px;
+    gap: 10px;
+    flex-basis: 230px;
+    padding: 2px 8px;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
     border-radius: 50px;
     background: #FFF;
-    width: 200px;
-    height: 15px;
     color: #0B0223;
     font-family: Work Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     border: 1px solid transparent;
 }
 
-.feature-main:hover {
+.single-column:hover {
     border: 1px solid #FF42A5;
     color: #FF42A5;
     cursor: pointer;
 }
 
-
-.feature-main-image {
-    width: 45px;
-    height: 45px;
+.single-column>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
-/* footer section */
+.full-column {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+/* game feature section end here ....*/
+/* footer section start here */
 .main-footer {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #0B0223;
-    height: 400px;
     color: #FFF;
     padding-top: 100px;
 }
@@ -451,25 +456,35 @@ nav {
 .footer-logo-container {
     display: flex;
     gap: 20px;
+    justify-content: center;
     align-items: center;
-    margin-left: 685px;
     padding-bottom: 40px;
+}
+
+.footer-logo-image {
+    width: 80px;
+    height: 40px;
+}
+
+.footer-logo-name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .footer-title {
     display: flex;
     gap: 40px;
+    justify-content: center;
     align-items: center;
-    margin-left: 475px;
     padding-bottom: 50px;
-
 }
 
 .social-icons {
     display: flex;
     gap: 40px;
     align-items: center;
-    margin-left: 600px;
+    justify-content: center;
     padding-bottom: 50px;
 }
 
@@ -481,15 +496,16 @@ nav {
     display: flex;
     gap: 40px;
     align-items: center;
-    margin-left: 480px;
+    justify-content: center;
     padding-bottom: 40px;
 }
 
 .developers-last {
-    margin-left: 550px;
+    text-align: center;
     padding-bottom: 40px;
 }
 
+/* footer section end here */
 /* navbar design for small device */
 @media screen and (min-width: 320px) and (max-width: 576px) {
     nav {
@@ -589,52 +605,6 @@ nav {
         width: 150px;
         padding-top: 450px;
     }
-
-
-    /* footer section */
-    .main-footer {
-        height: auto;
-    }
-
-    .footer-title,
-    .social-icons,
-    .developers,
-    .developers-last {
-        margin-left: 0px;
-    }
-
-    .footer-logo-container {
-        padding-left: 70px;
-        margin-left: 0px;
-    }
-
-    .footer-title,
-    .social-icons {
-        text-align: center;
-        padding-left: 10px;
-        display: grid;
-        column-gap: 0px;
-        grid-template-columns: repeat(3, 95px);
-    }
-
-    .developers {
-        font-size: 12px;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-        display: grid;
-        column-gap: 0px;
-        grid-template-columns: repeat(2, 170px);
-    }
-
-    .developers-last {
-        padding-top: 20px;
-        padding-left: 100px;
-        font-size: 12px;
-        width: 140px;
-        text-align: center;
-    }
-
 }
 
 /* navbar design for tablet device */
@@ -663,58 +633,9 @@ nav {
 
 
 
-/* practice */
-.single-column {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-basis: 230px;
-    padding: 2px 8px;
-    width: 220px;
-    height: 60px;
-    text-align: center;
-    align-items: center;
-    border-radius: 50px;
-    background: #FFF;
-    color: #0B0223;
-    font-family: Work Sans;
-    font-size: 14px;
-    font-weight: 600;
-    border: 1px solid transparent;
-}
-
-.single-column:hover {
-    border: 1px solid #FF42A5;
-    color: #FF42A5;
-    cursor: pointer;
-}
-
-.single-column>img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-}
 
 
-
-.full-column {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-width: 100%;
-    margin: 0 auto;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-}
-
-
-
-/* for medium device */
+/* game feature section for medium size device */
 @media screen and (min-width: 320px) and (max-width: 576px) {
     .full-column {
         padding-left: 2px;
@@ -738,64 +659,104 @@ nav {
         height: 25px;
         border-radius: 50px;
     }
+
     #single-column1 {
         width: 80px;
         height: 25px;
     }
+
     #single-column2 {
         width: 90px;
         height: 25px;
     }
+
     #single-column3 {
         width: 95px;
         height: 25px;
     }
 
-
-    .section {
+    .feature-container {
         width: 100%;
     }
 }
 
-/* for tablet device */
+/* game feature section for tablet size device */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .full-column {
-        padding-left: 2px;
         display: grid;
-        gap: 4px;
         grid-template-columns: repeat(3, 1fr);
+        padding-left: 50px;
     }
 
     .single-column {
-        width: 100px;
-        height: 25px;
-        gap: 1px;
-        padding: 2px 2px;
-        border-radius: 50px;
-        font-size: 7px;
+        width: 180px;
+        height: 45px;
+        gap: 5px;
+        font-size: 12px;
         border: 1px solid transparent;
     }
 
     .single-column>img {
-        width: 25px;
-        height: 25px;
-        border-radius: 50px;
+        width: 40px;
+        height: 40px;
     }
+
     #single-column1 {
-        width: 80px;
-        height: 25px;
+        width: 130px;
     }
+
     #single-column2 {
-        width: 90px;
-        height: 25px;
+        width: 150px;
     }
+
     #single-column3 {
-        width: 95px;
-        height: 25px;
+        width: 170px;
     }
 
-
-    .section {
+    .feature-container {
         width: 100%;
+    }
+}
+
+/* footer section for medium size device */
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .footer-logo-image {
+        width: 60px;
+        height: 35px;
+    }
+    .footer-logo-name {
+        font-size: 35px;
+    }
+    .footer-title {
+        display: grid;
+        row-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        font-size: 10px;
+    }
+    .social-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+    .developers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 10px;
+        place-items: center;
+    }
+    .developers-last {
+        width: 150px;
+        font-size: 10px;
+        margin: 0 auto;
+    }
+}
+
+/* footer section for tablet size device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .main-footer {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 }
