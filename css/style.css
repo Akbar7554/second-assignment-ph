@@ -12,11 +12,12 @@
 
 /* header style */
 /* Nav style */
-header {
+.header {
     background-color: #FFF;
 }
 
-nav {
+.nav-main-container {
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +51,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    color: var(--primary-color);
+    font-size: 18px;
 }
 
 .nav-container>ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
 }
 
@@ -71,7 +74,6 @@ nav {
     align-items: center;
     width: 220px;
     height: 40px;
-    flex-shrink: 0;
     border-radius: 8px;
     padding-left: 30px;
     padding-top: 20px;
@@ -504,8 +506,8 @@ nav {
 
 /* footer section end here */
 /* navbar design for small device */
-@media screen and (min-width: 320px) and (max-width: 576px) {
-    nav {
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .nav-main-container {
         flex-direction: column;
         gap: 30px;
         box-shadow: none;
@@ -604,10 +606,11 @@ nav {
 }
 
 /* navbar design for tablet device */
-@media screen and (min-width: 425px) and (max-width: 960px) {
-    nav {
-        padding-left: 17px;
-        gap: 30px;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .nav-main-container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 30px;
     }
 }
 
