@@ -204,8 +204,7 @@ nav {
     height: 470px;
 }
 
-.gamer-info {}
-
+/* .gamer-info {} */
 .gamer-title {
     text-align: right;
     font-family: Work Sans;
@@ -265,7 +264,6 @@ nav {
     display: flex;
     gap: 20px;
 }
-
 
 .image {
     width: 250px;
@@ -360,8 +358,7 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-.text-color-description {}
-
+/* .text-color-description {} */
 .title-container {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -542,7 +539,6 @@ nav {
         margin: 0 auto;
     }
 
-
     .goat-main-container,
     .right-image {
         margin-top: 400px;
@@ -614,26 +610,6 @@ nav {
         gap: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* game feature section for medium size device */
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -724,9 +700,11 @@ nav {
         width: 60px;
         height: 35px;
     }
+
     .footer-logo-name {
         font-size: 35px;
     }
+
     .footer-title {
         display: grid;
         row-gap: 30px;
@@ -734,17 +712,20 @@ nav {
         place-items: center;
         font-size: 10px;
     }
+
     .social-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
     }
+
     .developers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 10px;
         place-items: center;
     }
+
     .developers-last {
         width: 150px;
         font-size: 10px;
